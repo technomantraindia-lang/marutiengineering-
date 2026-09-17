@@ -1,0 +1,46 @@
+.customer-badge-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.customer-badge-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--brand-orange);
+  box-shadow: var(--shadow-card);
+}
+
+.customer-badge-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background-color: var(--background-soft);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.customer-badge-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-badge-title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--heading);
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+
+.customer-badge-industry {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}

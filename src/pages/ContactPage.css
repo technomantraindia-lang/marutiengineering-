@@ -1,0 +1,251 @@
+.contact-main-section {
+  background-color: var(--background-soft);
+}
+
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: flex-start;
+}
+
+/* Left Contact Info Column */
+.contact-info-header {
+  margin-bottom: 2rem;
+}
+
+.contact-info-title {
+  font-size: var(--h2-size);
+  color: var(--heading);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.contact-info-desc {
+  font-size: var(--text-sm);
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Personnel Cards */
+.personnel-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.personnel-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  box-shadow: var(--shadow-subtle);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.personnel-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--brand-orange);
+}
+
+.personnel-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background-color: var(--brand-orange-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.personnel-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.personnel-role {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--brand-orange);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.15rem;
+}
+
+.personnel-name {
+  font-size: 0.95rem;
+  color: var(--heading);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.personnel-phone-link {
+  font-family: var(--font-heading);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--brand-navy);
+  transition: color var(--transition-fast);
+}
+
+.personnel-phone-link:hover {
+  color: var(--brand-orange);
+}
+
+/* Facility Card */
+.facility-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-subtle);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.facility-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.facility-icon {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.facility-label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--brand-orange);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.2rem;
+}
+
+.facility-email-link {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--brand-navy);
+  transition: color var(--transition-fast);
+}
+
+.facility-email-link:hover {
+  color: var(--brand-orange);
+}
+
+.facility-address,
+.facility-hours {
+  font-size: var(--text-sm);
+  color: var(--heading);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.facility-divider {
+  height: 1px;
+  background-color: var(--border-light);
+}
+
+/* NDA Trust Card */
+.nda-trust-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background-color: var(--brand-orange-light);
+  border: 1px solid rgba(243, 107, 33, 0.3);
+  border-radius: var(--radius-lg);
+}
+
+.nda-title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin-bottom: 0.25rem;
+}
+
+.nda-desc {
+  font-size: var(--text-xs);
+  color: var(--text);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Map Section */
+.map-section {
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--border);
+}
+
+.map-header {
+  padding: 3.5rem 0 2rem;
+}
+
+.map-header-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.map-title {
+  font-size: var(--h2-size);
+  color: var(--heading);
+  margin-bottom: 0.35rem;
+}
+
+.map-subtitle {
+  font-size: var(--text-sm);
+  color: var(--text);
+  margin: 0;
+}
+
+.map-frame-wrapper {
+  width: 100%;
+  height: 420px;
+  background-color: var(--background-soft);
+  position: relative;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 1024px) {
+  .contact-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .personnel-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .map-header-inner .btn {
+    width: 100%;
+  }
+
+  .map-frame-wrapper {
+    height: 320px;
+  }
+}

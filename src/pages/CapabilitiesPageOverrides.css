@@ -1,0 +1,5 @@
+/* Content remains readable immediately; the observer only adds a subtle settled state. */
+.cap-page-reveal {
+  opacity: 1;
+  transform: none;
+}

@@ -1,0 +1,11 @@
+.infrastructure-section {
+  background-color: #FFFFFF;
+}
+
+.infrastructure-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* Use the shared page rail; individual cards retain their existing proportions. */
+  width: 100%;
+}
